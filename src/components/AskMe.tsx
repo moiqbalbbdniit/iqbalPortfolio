@@ -39,12 +39,12 @@ const suggestedQuestions = [
   },
   {
     icon: <MessageSquare className="w-4 h-4" />,
-    text: "Tell me about the DevOverflow project",
+    text: "Tell me about the AutomatedExamSystem project",
     category: "Projects"
   },
   {
     icon: <Briefcase className="w-4 h-4" />,
-    text: "What's your experience with AI/ML?",
+    text: "What's your experience with CI/CD?",
     category: "Experience"
   }
 ];
@@ -264,7 +264,7 @@ export default function AskMe({ isOpen, onClose }: { isOpen: boolean; onClose: (
                     AI Assistant
                     <Sparkles className="w-4 h-4 text-yellow-500 animate-pulse" />
                   </h2>
-                  <p className="text-xs text-gray-500 dark:text-gray-400">Ask me anything about Prince</p>
+                  <p className="text-xs text-gray-500 dark:text-gray-400">Ask me anything about Iqbal</p>
                 </div>
               </div>
               <button
@@ -292,7 +292,7 @@ export default function AskMe({ isOpen, onClose }: { isOpen: boolean; onClose: (
                       animate={{ opacity: 1, y: 0 }}
                       className="text-center px-4 text-sm font-medium"
                     >
-                      Hi! I'm Prince's AI assistant. How can I help you today?
+                      Hi! I'm Iqbal's AI assistant. How can I help you today?
                     </motion.p>
                   </div>
 

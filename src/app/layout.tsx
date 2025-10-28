@@ -11,7 +11,7 @@ import Head from 'next/head';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Mohammad Iqbal - Portfolio",
+  title: "Iqbal - Portfolio",
   description: "Mohammad Iqbal's personal portfolio visit to know more about me and my work.",
 };
 
