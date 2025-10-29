@@ -29,7 +29,7 @@ const SkillPage = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen text-white p-6">
       <CodeIcon className="w-10 h-10 text-blue-500 animate-[pulse_2s_ease-in-out_infinite]" />
-      <h1 className="text-center text-3xl font-extrabold my-6 tracking-wide">
+      <h1 className="text-center text-3xl font-extrabold my-6 tracking-wide text-foreground">
         ⚙️ My Skills
       </h1>
       <p className="text-center text-gray-400 max-w-2xl mb-8">
