@@ -38,7 +38,7 @@ const ResumeSection = () => {
                     </motion.a>
                     
                     <motion.a
-                        href="/assests/resume.pdf"
+                        href="/assests/Resume.pdf"
                         download="Mohammad_Iqbal_Resume.pdf"
                         className="group relative inline-flex items-center justify-center px-6 py-2 bg-transparent border-2 border-current overflow-hidden font-medium rounded-lg hover:scale-105 transition-all duration-300"
                         whileHover={{ scale: 1.05 }}
