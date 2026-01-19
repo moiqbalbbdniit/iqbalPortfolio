@@ -29,7 +29,7 @@ export default function Footer() {
             <Tooltip>
               <TooltipTrigger asChild>
                 <Link
-                  href="www.linkedin.com/in/moiqbalbbdniit"
+                  href="https://linkedin.com/in/moiqbalbbdniit"
                   target="_blank"
                   className="text-muted-foreground hover:text-primary transition-colors"
                   prefetch={false}

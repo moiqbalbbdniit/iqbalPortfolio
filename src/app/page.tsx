@@ -16,7 +16,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import MyProjects from "@/components/projects";
-import { FaBrain, FaNodeJs, FaSchool } from "react-icons/fa";
+import { FaBrain, FaNodeJs, FaSchool,FaStethoscope } from "react-icons/fa";
 import CertificationsSection from "@/components/cert";
 import Head from "next/head";
 import CopyCmd from "@/components/copycmd";
@@ -29,23 +29,25 @@ import { motion } from "framer-motion";
 import ResumeSection from "@/components/ResumeSection";
 import ExperienceSection from "@/components/ExperienceSection";
 
+
 const projects = [
   {
-    title: "AI Exam Evaluation System",
+    title: "AI Automated Exam System",
     description:
-      "An intelligent exam management platform that allows teachers to create exams, students to submit answers, and an AI engine to automatically evaluate descriptive responses. It includes real-time analytics, faculty dashboards, subject management, and automated score calculation with feedback reports.",
-    icon: <FaBrain className="text-teal-500" />,
+      "A self-hosted examination platform leveraging OpenAI to automatically evaluate descriptive answers. Features real-time student analytics, subject-specific question generation, and faculty dashboards, reducing manual grading time by 60%.",
+    icon: <FaBrain className="text-teal-500 text-4xl" />,
   },
   {
-    title: "HRA Inter College Attendance & Management System",
+    title: "HRA Digital Campus System",
     description:
-      "A full-fledged digital attendance and student management platform developed for HRA Inter College. Teachers can manage attendance, view class records, and edit existing entries, while students can log in to view their attendance statistics. The system ensures data accuracy, prevents duplicate submissions, and offers a responsive, modern UI.",
-    icon: <FaSchool className="text-purple-500" />,
+      "A comprehensive institutional platform digitizing attendance and academic records for HRA Inter College. Implemented secure Role-Based Access Control (RBAC) for teachers and students, ensuring 100% data accuracy and eliminating manual paperwork.",
+    icon: <FaSchool className="text-purple-500 text-4xl" />,
   },
   {
-    title: "MagicDocs OpenSource",
-    description: "A backend project using Next.js.",
-    icon: <FaNodeJs className="text-green-500" />,
+    title: "Dr. Abhi Clinic Management",
+    description:
+      "A production-ready SaaS for medical practice management. Streamlines patient records, appointment scheduling, and billing cycles, featuring secure Clerk authentication and automated print-ready prescription reports.",
+    icon: <FaStethoscope className="text-green-500 text-4xl" />,
   },
 ];
 // const certifications = [

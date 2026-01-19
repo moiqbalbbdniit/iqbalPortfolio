@@ -1,0 +1,29 @@
+﻿
+> finalportfolio@0.1.0 build
+> next build
+
+  Γû▓ Next.js 14.2.4
+  - Environments: .env
+
+   Creating an optimized production build ...
+ Γ£ô Compiled successfully
+   Linting and checking validity of types ...
+npm : Failed to compile.
+At line:1 char:46
++ ... t-Location 'D:\myPortfolio\portfolio-dev'; npm run build 2>&1 | Out-F ...
++                                                ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Failed to compile.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+./src/app/page.tsx:15:8
+Type error: Could not find a declaration file for module 'lucide-react'. 'D:/myPortfolio/portfolio-dev/node_modules/lucide-react/dist/cjs/lucide-react.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/lucide-react` if it exists or add a new declaration (.d.ts) file containing `declare module 'lucide-react';`
+
+[0m [90m 13 |[39m   [33mTerminal[39m[33m,[39m[0m
+[0m [90m 14 |[39m   [33mFileText[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 15 |[39m } [36mfrom[39m [32m"lucide-react"[39m[33m;[39m[0m
+[0m [90m    |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 16 |[39m [36mimport[39m [33mImage[39m [36mfrom[39m [32m"next/image"[39m[33m;[39m[0m
+[0m [90m 17 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m"next/link"[39m[33m;[39m[0m
+[0m [90m 18 |[39m [36mimport[39m [33mMyProjects[39m [36mfrom[39m [32m"@/components/projects"[39m[33m;[39m[0m

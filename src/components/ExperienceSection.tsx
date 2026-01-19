@@ -19,46 +19,26 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
-    period: "Dec 2025 - Present",
+    period: "Sep 2025 - Dec 2025 ",
     title: "Full Stack Developer",
     company: "AlgoForge Studios",
-    location: "Noida, India",
+    location: "Noida, India", // or Remote based on your preference
     achievements: [
       {
-        text: "Contributed to AppyPay (Digital Payment Platform) by designing a responsive merchant dashboard using Material-UI and custom CSS animations, implementing a dynamic theming system with compound components that reduced code redundancy by 40% while maintaining consistent UX across multiple merchant portals.",
-        highlights: ["AppyPay", "Material-UI", "CSS animations", "40%"]
+        text: "Spearheaded the development of an AI-driven Automated Exam System that leverages OpenAI's GPT models to generate subject-specific question papers instantly. Implemented a secure, self-hosted testing environment with automated grading pipelines, reducing faculty administrative workload by 60% and ensuring evaluation consistency.",
+        highlights: ["AI-driven", "OpenAI", "automated grading", "60%"]
       },
       {
-        text: "Developed a scalable merchant registration system in AppyPay using Redux Toolkit, handling complex business logic for payment method integration, bank account validation, and KYC verification, enabling quicker and more intuitive decision-making for users reducing onboarding time by 35%.",
-        highlights: ["Redux Toolkit", "KYC verification", "35%"]
+        text: "Architected a scalable Learning Management System (LMS) tailored for internal training, featuring granular Role-Based Access Control (RBAC) for admins, instructors, and students. Integrated secure video streaming, assignment submission portals, and real-time progress tracking, resulting in a 30% increase in course engagement.",
+        highlights: ["Learning Management System", "RBAC", "video streaming", "30%"]
       },
       {
-        text: "Contributed to Supra.tools by developing a dynamic product analytics dashboard using Next.js enabling users to process and visualize feature matrices through interactive charts. Reduced data analysis time by 40% and improved user satisfaction ratings by 15%.",
-        highlights: ["Supra.tools", "Next.js", "40%", "15%"]
+        text: "Engineered a CGPA Prediction System utilizing Python-based Machine Learning regression algorithms to forecast student performance trends. Built an intuitive faculty dashboard that visualizes historical academic data to identify at-risk students early, enabling data-driven intervention strategies.",
+        highlights: ["CGPA Prediction", "Machine Learning", "dashboard", "intervention"]
       },
       {
-        text: "Developed an end-to-end AI-powered exercise correction platform leveraging TensorFlow.js and React.js that performs real-time skeletal tracking and pose estimation to provide instant feedback on exercise form featuring a custom pose detection algorithm and an intuitive admin interface for exercise customization.",
-        highlights: ["TensorFlow.js", "React.js", "real-time skeletal tracking", "pose estimation"]
-      }
-    ]
-  },
-  {
-    period: "Sep 2025 - Nov 2025",
-    title: "FullStack Developer Intern",
-    company: "AlgoForge Studios",
-    location: "Noida, India",
-    achievements: [
-      {
-        text: "Developed RESTful APIs and integrated front-end components using Node.js, Express.js and React, automating order processing to improve operational efficiency by 30%.",
-        highlights: ["RESTful APIs", "Node.js", "Express.js", "React", "30%"]
-      },
-      {
-        text: "Enhanced search functionality with debouncing techniques reducing API calls by 60% and improved user experience through Pagination and real-time updates via Socket.IO.",
-        highlights: ["debouncing", "60%", "Pagination", "Socket.IO"]
-      },
-      {
-        text: "Implemented email notifications using Nodemailer and optimized image uploads with Cloudinary, resulting in a 25% reduction in system response time.",
-        highlights: ["Nodemailer", "Cloudinary", "25%"]
+        text: "Optimized backend infrastructure by implementing Redis caching and refactoring REST API endpoints, which decreased server response latency by 40% and enabled the platform to handle concurrent traffic spikes during high-volume exam sessions.",
+        highlights: ["Redis caching", "REST API", "latency", "40%"]
       }
     ]
   }
@@ -70,7 +50,9 @@ const ExperienceCard = ({ exp, index }: { exp: ExperienceItem; index: number }) 
   const highlightText = (text: string, highlights: string[]) => {
     let highlightedText = text;
     highlights.forEach(keyword => {
-      const regex = new RegExp(`(${keyword})`, 'gi');
+      // Escape special characters to prevent regex errors
+      const escapedKeyword = keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const regex = new RegExp(`(${escapedKeyword})`, 'gi');
       highlightedText = highlightedText.replace(regex, '<span class="text-emerald-500 font-semibold">$1</span>');
     });
     return <p dangerouslySetInnerHTML={{ __html: highlightedText }} />;
@@ -143,7 +125,7 @@ const ExperienceCard = ({ exp, index }: { exp: ExperienceItem; index: number }) 
           )}
         </AnimatePresence>
 
-        {/* Expand Button - Now outside the content area */}
+        {/* Expand Button */}
         <div className="border-t border-gray-100 dark:border-gray-700/50">
           <button
             onClick={() => setIsExpanded(!isExpanded)}
@@ -174,9 +156,6 @@ const ExperienceSection = () => {
           <MdOutlineWork className="text-xl" />
           <span className="text-sm font-semibold">Work Experience</span>
         </div>
-        {/* <h2 className="text-2xl font-bold mt-4 bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">
-          My Professional Journey
-        </h2> */}
       </motion.div>
 
       {/* Timeline */}
@@ -208,4 +187,4 @@ const ExperienceSection = () => {
   );
 };
 
-export default ExperienceSection; 
+export default ExperienceSection;

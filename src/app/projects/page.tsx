@@ -22,7 +22,7 @@ export default function Component() {
                 </CardItem>
                 <CardItem
                   as="p"
-                  href="https://github.com/studiosalgoforge-stack/automatedExamSystem"
+                  href="https://github.com/moiqbalbbdniit/automatedExamSystembyIqbal"
                   translateZ="60"
                   className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
                 >
@@ -49,7 +49,7 @@ export default function Component() {
                     translateX={-40}
                     as="a"
                     target="_blank"
-                    href="https://automated-exam-system.vercel.app/"
+                    href="https://automatedexamsystembyiqbal.vercel.app/"
                     className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
                   >
                     Live Link →
@@ -60,7 +60,7 @@ export default function Component() {
                     translateX={40}
                     as="a"
                     target="_blank"
-                    href="https://github.com/studiosalgoforge-stack/automatedExamSystem"
+                    href="https://github.com/moiqbalbbdniit/automatedExamSystembyIqbal"
                     className="flex items-center px-4 py-2 text-white text-xl font-bold"
                   >
                     <GitHubLogoIcon className="w-8 h-8" />
@@ -155,7 +155,7 @@ export default function Component() {
                     translateX={-40}
                     as="a"
                     target="_blank"
-                    href="https://hraintercollege.netlify.app/"
+                    href="https://hraintercollege.vercel.app/"
                     className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
                   >
                     Live Link →
