@@ -95,13 +95,16 @@ const page = () => {
         <FlipWordsDemo />
 
         <p className=" opacity-80 text-sm lg:text-xl lg:mb-2 font-medium">
-          Full Stack Developer @
-          <span className="  text-blue-500  font-bold">
+          Full Stack Developer | AI Enthusiast | Software Engineer
+          <br />
+          ️Building innovative solutions with cutting-edge technologies.
+          ️
+          {/* <span className="  text-blue-500  font-bold">
             {" "}
             <a href="https://algoforgestudios.com/" target="_blank">
               AlgoForge Studios
             </a>{" "}
-          </span>
+          </span> */}
         </p>
         <div className="flex flex-col md:flex-row items-right mt-3 gap-1 md:gap-3">
           <CopyCmd />
