@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Home, Info, Code, TerminalIcon, Bot } from "lucide-react";
+import { Home, Info, Code, TerminalIcon, Bot, BookOpen } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ModeToggle } from "../ui/darkmode";
@@ -23,6 +23,11 @@ const navbarItems = [
         name: "Skills",
         href: "/skills",
         icon: Code,
+    },
+    {
+        name: "Blog",
+        href: "/blog",
+        icon: BookOpen,
     },
     {
         name: "About",

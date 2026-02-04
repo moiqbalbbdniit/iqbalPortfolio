@@ -28,6 +28,7 @@ import ContactMe from "@/components/contact";
 import { motion } from "framer-motion";
 import ResumeSection from "@/components/ResumeSection";
 import ExperienceSection from "@/components/ExperienceSection";
+import BlogSection from "@/components/blog-section";
 
 
 const projects = [
@@ -117,6 +118,7 @@ const page = () => {
         <div>
           <MyProjects projects={projects} />
         </div>
+        <BlogSection />
         <div>
           <ContactMe />
         </div>

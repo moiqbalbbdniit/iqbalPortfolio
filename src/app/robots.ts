@@ -6,6 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
+    host: "https://iqbaldev.in",
     sitemap: "https://iqbaldev.in/sitemap.xml",
   };
 }
